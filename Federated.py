@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv("Data/example_data.csv")
+df = pd.read_csv("./Data/example_data.csv")
 
 ### Suspected COVID19 ( symptoms)
 
