@@ -1,7 +1,11 @@
 FROM python:3.7
-COPY Federated.py /Federated.py
 
 RUN pip install --upgrade pip && \ 
     pip install pandas
+RUN mkdir /federatedpy
+RUN mkdir /federatedpy/data
 
-CMD [“python” , “/Federated.py” , "./Data/example_data.csv"]
+COPY ./federatedpy
+WORKDIR ./federatedpy
+
+CMD [ "python", "/prelim_analysis.py" ]
