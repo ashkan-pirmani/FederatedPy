@@ -3,10 +3,10 @@ FROM python:3.7
 RUN pip install --upgrade pip && \ 
     pip install pandas && \ 
     pip install matplotlib
-RUN mkdir /federatedpy
-RUN mkdir /federatedpy/data
+RUN mkdir /FederatedPy
+RUN mkdir /FederatedPy/Data
 
-COPY . /federatedpy
-WORKDIR /federatedpy
+COPY . /FederatedPy
+WORKDIR /FederatedPy
 
-CMD python /federatedpy/federated.py
+CMD python /FederatedPy/Federated.py
