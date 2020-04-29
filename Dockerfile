@@ -8,4 +8,4 @@ RUN mkdir /federatedpy/data
 COPY ./federatedpy
 WORKDIR ./federatedpy
 
-CMD [ "python", "/prelim_analysis.py" ]
+CMD python /federatedpy/federated.py
