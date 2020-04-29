@@ -41,8 +41,8 @@ plt.legend( labels, bbox_to_anchor=(0.8, 1.05))
 plt.axis('equal')
 plt.tight_layout()
 plt.title("Repartition of patients currently treated")
-plt.savefig('Repartition of patients currently treated.png')
-plt.show()
+plt.savefig('Repartition of patients currently treated.pdf')
+plt.show(block=True)
 
 ### Subset of previously treated patients
 
@@ -58,5 +58,5 @@ plt.legend( labels, bbox_to_anchor=(0.8, 1.05))
 plt.axis('equal')
 plt.tight_layout()
 plt.title("Repartition of patients treated in the past but not currently treated")
-plt.savefig("Repartition of patients treated in the past but not currently treated")
-plt.show()
+plt.savefig("Repartition of patients treated in the past but not currently treated.pdf")
+plt.show(block=True)
