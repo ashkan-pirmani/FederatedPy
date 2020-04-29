@@ -69,14 +69,17 @@ $ docker --version
 Docker version 19.03, build c97c6d6
 ```
 
+if you could run this command it means that you could install the docker successfully!
+
 
 Build
 -----------
-Pull the latest Docker Image ( you can find the command in the docker page)
+Pull the latest Docker Image (you can find the command in the docker page)
 
 ```
 docker pull ashkanpirmani/federated-py
 ```
+
 
 Run
 -----------
@@ -84,3 +87,25 @@ By entering the following command in the terminal/cmd you can easily run the doc
 ```
 docker run ashkanpirmani/federated-py
 ```
+
+Development
+--------
+If you want to change or update the .CSV in the future you can easily clone(Download) the GitHub repository! after Clone the repository you have follow below commands :
+
+open the Terminal/CMD and redirect the path to the cloned directory!
+after redirecting
+
+```
+docker build -t federated .
+```
+
+after Build it is time to Run it
+
+```
+docker run federated
+```
+
+
+Notes
+--------
+the new .CSV file must be the same name as the old one and be in its folder
