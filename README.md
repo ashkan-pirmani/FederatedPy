@@ -93,9 +93,11 @@ docker run -it --name federated -v ${PWD}:/app msdataalliance/federated-py
 
 Development
 --------
-If you want to change or update the .CSV in the future you can easily clone(Download) the GitHub repository! after Clone the repository you have follow below commands :
+If you want to change or update the .CSV in the future you can easily clone(Download) the GitHub repository! after Cloning the repository you have follow below commands :
 
-open the Terminal/CMD and redirect the path to the cloned directory!
+open the Terminal/CMD/PowerShell and redirect the path to the cloned directory!
+(you can easily use cd command to redirect to the cloned directory)
+
 after redirecting
 
 ```
@@ -105,10 +107,10 @@ docker build -t federated .
 after Build it is time to Run it
 
 ```
-docker run federated
+docker run -it -v ${PWD}:/app federated
 ```
 
 
 Notes
 --------
-the new .CSV file must be the same name as the old one and be in its folder
+the new .CSV file must be the same name as the old one and be in its folder(Do not change the csv path)
