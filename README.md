@@ -1,3 +1,6 @@
+
+<img src="/images/ms.png" width="728" height="132">
+
 Docker Container to Help MS Custodians 
 -----------
 #DataSavesLives – #MSCOVID19
@@ -57,7 +60,7 @@ Docker Desktop for Windows is the Community version of Docker for Microsoft Wind
 https://hub.docker.com/editions/community/docker-ce-desktop-windows/
 
 
-
+Note: Docker may not run in some windows operating system for more information contact admin!
 
 Check versions
 ------------
@@ -77,7 +80,7 @@ Build
 Pull the latest Docker Image (you can find the command in the docker page)
 
 ```
-docker pull ashkanpirmani/federated-py
+docker pull msdataalliance/federated-py
 ```
 
 
@@ -85,7 +88,7 @@ Run
 -----------
 By entering the following command in the terminal/cmd you can easily run the docker engine with python
 ```
-docker run ashkanpirmani/federated-py
+docker run -it --name federated -v ${PWD}:/app msdataalliance/federated-py
 ```
 
 Development
