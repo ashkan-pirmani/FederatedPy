@@ -12,24 +12,25 @@ print(f"Number of CONFIRMED patients with covid : {patients_confirmed.shape[0]}"
 ### Type of MS
 
 print("Number of patients per MS Type : ")
-df.groupby("ms_type").count()["secret_name"]
+print(df.groupby("ms_type").count()["secret_name"])
 
 ### Number of different countries
 
 unique_countries = df["covid19_country"].nunique()
 print(f"Number of unique countries : {unique_countries}")
 print("Number of patients per country : ")
-df.groupby("covid19_country").count()["secret_name"]
+print(df.groupby("covid19_country").count()["secret_name"])
 
 ### Counts of patients ( treated - non treated - never treated)
-
-df.groupby("current_dmt")["secret_name"].count()
+print("Counts of patients : ")
+print(df.groupby("current_dmt")["secret_name"].count())
 
 ### Subset of treated patients
 
+print("Subset of treated patients : ")
 current_dmt = df.loc[df.current_dmt=="yes"].groupby("type_dmt").count().copy()
 
-current_dmt.sort_values("current_dmt",ascending=False)["secret_name"]
+print(current_dmt.sort_values("current_dmt",ascending=False)["secret_name"])
 
 import matplotlib.pyplot as plt
 
@@ -46,9 +47,9 @@ plt.show(block=True)
 
 ### Subset of previously treated patients
 
-
+print("Subset of previously treated patients : ")
 last_dmt = df.loc[df.current_dmt=="no"].groupby("type_dmt").count().copy() # no is "no but was in the past"
-last_dmt.sort_values("current_dmt",ascending=False)["secret_name"]
+print(last_dmt.sort_values("current_dmt",ascending=False)["secret_name"])
 
 labels = last_dmt.index
 sizes = last_dmt.current_dmt.values
