@@ -110,7 +110,6 @@ after Build it is time to Run it
 docker run -it -v ${PWD}:/app federated
 ```
 
-
 Notes
 --------
 the new .CSV file must be the same name as the old one and be in its folder(Do not change the csv path)
