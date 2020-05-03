@@ -3,7 +3,7 @@ df = pd.read_csv("./Data/example_data.csv")
 
 ### Suspected COVID19 ( symptoms)
 
-patients_with_covid19 = df.loc[((df.covid19_has_symptoms=="yes") | (df.covid19_suspected_case == True))]["secret_name"]
+patients_with_covid19 = df.loc[((df.covid19_has_symptoms=="yes") | (df.covid19_suspected_case == "yes"))]["secret_name"]
 print(f"Number of patients with covid : {patients_with_covid19.shape[0]}")
 
 patients_confirmed = df.loc[df.covid19_confirmed_case=="yes"]
