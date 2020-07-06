@@ -45,6 +45,7 @@ plt.title("Repartition of patients currently treated")
 plt.savefig('Repartition of patients currently treated.pdf')
 plt.show(block=True)
 
+
 ### Subset of previously treated patients
 
 print("Subset of previously treated patients : ")
