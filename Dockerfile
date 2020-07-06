@@ -8,5 +8,6 @@ RUN mkdir /FederatedPy/Data
 
 COPY . /FederatedPy
 WORKDIR /FederatedPy
+-v ${PWD}:/home/jovyan/work
 
 CMD python /FederatedPy/Federated.py
