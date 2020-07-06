@@ -88,7 +88,7 @@ Run
 -----------
 By entering the following command in the terminal/cmd you can easily run the docker engine with python
 ```
-docker run -it --name federated -v ${PWD}:/app msdataalliance/federated-py
+docker run -it --name federated -v ${PWD}:/FederatedPy/ msdataalliance/federated-py
 ```
 
 Development
@@ -107,7 +107,7 @@ docker build -t federated .
 after Build it is time to Run it
 
 ```
-docker run -it -v ${PWD}:/app federated
+docker run -it -v ${PWD}:/FederatedPy/ federated
 ```
 
 Notes
